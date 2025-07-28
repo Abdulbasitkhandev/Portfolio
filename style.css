@@ -1,0 +1,153 @@
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #05041f;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  padding: 20px 40px;
+  z-index: 999;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-weight: bold;
+  color: #ffc600;
+  font-size: 20px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links li a {
+  font-weight: 600;
+  color: white;
+  transition: color 0.3s;
+}
+.nav-links li a:hover {
+  color: #ffc600;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 40px 40px;
+}
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+}
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+}
+.hero-text .tag {
+  display: inline-block;
+  padding: 8px 14px;
+  border: 3px solid #ffc600;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #ffc600;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.hero-text .tag span {
+  color: white;
+}
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+.hero-text h1 span {
+  color: #ffc600;
+}
+.hero-text p {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+.hero-text p span {
+  color: #ffc600;
+  font-weight: bold;
+}
+
+/* Image */
+.hero-image {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+}
+.image-circle {
+  width: 280px;
+  height: 280px;
+  background-color: #ffc600;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-circle img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 5px solid white;
+  object-fit: cover;
+}
+
+/* Sections */
+section {
+  padding: 80px 40px;
+  border-top: 1px solid #333;
+}
+section h2 {
+  font-size: 2rem;
+  color: #ffc600;
+  margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .navbar .container {
+    flex-direction: column;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
